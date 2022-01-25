@@ -5,6 +5,7 @@
  */
 package ppj;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -34,6 +35,7 @@ import ppj.PPJ23.TASK1.Drzewo;
 import ppj.PPJ25.TASK1.reader;
 import ppj.PPJ22.TASK5.DrzewoOwocowe;
 import ppj.PPJ25.TASK2.numberSum;
+import ppj.PPJ25.TASK3.fileCreator;
 import ppj.PPJ27.task2.regex;
 import ppj.PPJ27.task4.numberPair;
 import ppj.PPJ28.task1.task1;
@@ -252,8 +254,15 @@ public class Main {
 //    translator.translateAddresses();
 //    reader Reader = new reader();
 //    Reader.readFile();
-    numberSum sum = new numberSum();
-    sum.sumNumbers();
+//    numberSum sum = new numberSum();
+//    sum.sumNumbers();
+    fileCreator fc = new fileCreator();
+    try{
+        fc.makeFiles(2);
+    }catch(IOException e){
+        System.out.println(e);
+    }
+    
     
     }
     
