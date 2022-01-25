@@ -35,6 +35,7 @@ import ppj.PPJ22.TASK5.DrzewoOwocowe;
 import ppj.PPJ27.task2.regex;
 import ppj.PPJ27.task4.numberPair;
 import ppj.PPJ28.task1.task1;
+import ppj.PPJ28.task2.task2;
 
 /**
  *
@@ -239,8 +240,12 @@ public class Main {
 //        numberPair np = new numberPair();
 //        np.checkNumberPairs();
 
-    task1 string = new task1("A.B.Z.F.");
-    string.checkExpression();
+//    task1 string = new task1("A.B.Z.F.");
+//    string.checkExpression();
+
+    task2 checker = new task2();
+    checker.toNumberConversion();
+    
     }
     
 }
