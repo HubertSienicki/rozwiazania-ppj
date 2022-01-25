@@ -34,6 +34,7 @@ import ppj.PPJ23.TASK1.Drzewo;
 import ppj.PPJ22.TASK5.DrzewoOwocowe;
 import ppj.PPJ27.task2.regex;
 import ppj.PPJ27.task4.numberPair;
+import ppj.PPJ28.task1.task1;
 
 /**
  *
@@ -232,11 +233,14 @@ public class Main {
 //            System.out.print(tab[i] + " ");
 //    }
 
-//        regex regular = new regex("FLFF");
+//        regex regular = new regex("FFFF");
 //        System.out.println(regular.isHex());
         
-        numberPair np = new numberPair();
-        np.checkNumberPairs();
+//        numberPair np = new numberPair();
+//        np.checkNumberPairs();
+
+    task1 string = new task1("A.B.Z.F.");
+    string.checkExpression();
     }
     
 }
