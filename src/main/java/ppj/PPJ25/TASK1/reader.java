@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ppj.PPJ25;
+package ppj.PPJ25.TASK1;
 
 import java.io.FileInputStream;
 import java.io.IOException;

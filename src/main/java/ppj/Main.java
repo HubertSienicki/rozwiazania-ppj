@@ -31,8 +31,9 @@ import ppj.PPJ22.TASK1.Prostopadloscian;
 import ppj.PPJ22.TASK1.Trojkat;
 import ppj.PPJ22.TASK3.CiagnikSiodlowy;
 import ppj.PPJ23.TASK1.Drzewo;
-import ppj.PPJ25.reader;
+import ppj.PPJ25.TASK1.reader;
 import ppj.PPJ22.TASK5.DrzewoOwocowe;
+import ppj.PPJ25.TASK2.numberSum;
 import ppj.PPJ27.task2.regex;
 import ppj.PPJ27.task4.numberPair;
 import ppj.PPJ28.task1.task1;
@@ -249,8 +250,10 @@ public class Main {
 //    checker.toNumberConversion();
 //    task3 translator = new task3();
 //    translator.translateAddresses();
-    reader Reader = new reader();
-    Reader.readFile();
+//    reader Reader = new reader();
+//    Reader.readFile();
+    numberSum sum = new numberSum();
+    sum.sumNumbers();
     
     }
     
