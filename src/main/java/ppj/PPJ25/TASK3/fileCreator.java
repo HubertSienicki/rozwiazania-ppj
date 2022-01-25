@@ -23,12 +23,16 @@ public class fileCreator {
     public void makeFiles(int nOfFiles) throws IOException{
         Random r = new Random();
         int[] temp = new int[10];
+        
         for (int i = 0; i < nOfFiles; i++) {
             FileOutputStream fos = new FileOutputStream("C:\\Users\\kneiv\\Documents\\NetBeansProjects\\ppj\\src\\main\\java\\ppj\\PPJ25\\TASK3\\" + name + i + extension);
+            
             for (int j = 0; j < 10; j++) {
                 temp[j] = r.nextInt(10000);
             }
+            
             Arrays.sort(temp);
+            
             for (int j = 0; j < temp.length; j++) {
                 fos.write(Integer.toString(temp[j]).getBytes());
                 fos.write(32); //Whitespace for clarity
