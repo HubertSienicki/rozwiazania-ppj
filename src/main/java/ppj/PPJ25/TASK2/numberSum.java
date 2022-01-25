@@ -21,14 +21,23 @@ public class numberSum {
         try{
             FileInputStream fls = new FileInputStream("C:\\Users\\kneiv\\Documents\\NetBeansProjects\\ppj\\src\\main\\java\\ppj\\PPJ25\\TASK2\\zad1.txt");
             int sum = 0;
+            String temp = "";
+            
             for (int i = fls.read(); i > -1; i = fls.read()) {
-                if(i == 32){ //Whitespace skip
-                    i = fls.read();
+                if(i == -1){
+                    sum += Integer.parseInt(temp);
                 }else{
-                    sum+= i;
+                    if(i == 32){ //Whitespace check
+                        sum += Integer.parseInt(temp);
+                        temp = "";
+                    }else{
+                        temp += (char)i;
+                        System.out.println(temp);
+                    }
                 }
             }
-            System.out.println((int)sum);
+            sum += Integer.parseInt(temp);
+            System.out.println("Suma: " + (int)sum);
         }catch(IOException e){
             System.out.println(e);
         }
